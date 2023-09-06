@@ -20,7 +20,19 @@ public class ReverseAString {
 		char[] charcterName = name.toCharArray();
 		String reverseName="";
 		for(int i=charcterName.length-1;i>=0;i--) {
-			reverseName=reverseName+charcterName[i];
+			reverseName=charcterName[i]+reverseName;
+		}
+		System.out.println(reverseName);
+	}
+	
+	public void usingOwnLogic1() {
+		String name = "Mukesh";
+		String reverseName = "";
+		char ch;
+		for(int i=0;i<name.length();i++) {
+			ch=name.charAt(i);
+			reverseName=ch+reverseName;
+			
 		}
 		System.out.println(reverseName);
 	}
@@ -43,7 +55,8 @@ public class ReverseAString {
 		ReverseAString aString = new ReverseAString();
 		//aString.usingStringBuffer();
 		//aString.usingOwnLogic();
-		aString.usingCollections();
+		//aString.usingCollections();
+		aString.usingOwnLogic1();
 
 	}
 
