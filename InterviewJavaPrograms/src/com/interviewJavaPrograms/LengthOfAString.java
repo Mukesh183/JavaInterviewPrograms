@@ -2,7 +2,6 @@ package com.interviewJavaPrograms;
 
 import java.util.Scanner;
 
-
 public class LengthOfAString {
 
 	public static void main(String[] args) {
